@@ -15,10 +15,14 @@ player::player()
     meilleursScores[3] = 75;   //Remplissage de la quatrième case
     meilleursScores[4] = 78;   //Remplissage de la cinquième case
 }
+player::player(std::string name, int scoreun, int scoredeux, int scoretrois, int scorequatre,int scorecinq): pseudo(name), score1(scoreun),score2(scoredeux),score3(scoretrois),score4(scorequatre),score5(scorecinq)
+{
+
+}
 int player::moyenne()
     {
         int moyenne = 0;
-        moyenne = meilleursScores[0] + meilleursScores[1] + meilleursScores[2] + meilleursScores[3] + meilleursScores[4];
+        moyenne = score1 + score2 + score3 + score4 + score5;
         moyenne = moyenne / 5;
         cout << "Votre moyenne est :" << moyenne << " /100" << endl;
         return moyenne;
@@ -26,7 +30,7 @@ int player::moyenne()
 int player::scoreTotal()
     {
         int scoreTotal = 0;
-        scoreTotal = meilleursScores[0] + meilleursScores[1] + meilleursScores[2] + meilleursScores[3] + meilleursScores[4];
+        scoreTotal = score1 + score2 + score3 + score4 + score5;
         cout << "Votre score total est :" << scoreTotal << " /100" << endl;
         return scoreTotal;
     }
