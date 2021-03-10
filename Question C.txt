@@ -1,0 +1,3 @@
+Pour ajouter ou supprimer des chansons librement il faut créer une classe chanson(nomChanson : string, meilleurScore : int).
+Cette classe est lié à karaoké.
+Un Karaoke possède aussi un nombre indéterminé d’objets Chanson(au moins 5?, toutefois).
